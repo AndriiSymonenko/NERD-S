@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'robotobold';
-    src: url('roboto-bold-webfont.woff2') format('woff2'),
-         url('roboto-bold-webfont.woff') format('woff');
+    src: url('robotobold.woff2') format('woff2'),
+         url('robotobold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,17 +9,17 @@
 
 @font-face {
     font-family: 'robotomedium';
-    src: url('../font/roboto-medium-webfont.woff2') format('woff2'),
-         url('roboto-medium-webfont.woff') format('woff');
+    src: url('../font/robotomedium.woff2') format('woff2'),
+         url('../font/robotomedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'robotoregular';
-    src: url('roboto-regular-webfont.woff2') format('woff2'),
-         url('roboto-regular-webfont.woff') format('woff');
+    font-family: 'roboto';
+    src: url('../font/roboto.woff2') format('woff2'),
+         url('../font/roboto.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,12 +27,15 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: "robotoregular" Arial, Helvetica, sans-serif;
+    font-family: "Roboto";
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     color: #283136;
     background-color: #ffffff;
+}
+.visually-hiden{
+    display: none;
 }
 a{
     text-decoration: none;
@@ -42,11 +45,15 @@ a{
     vertical-align: middle;
     color: #ffffff;
     background-color: #fb565a;
+    border-radius: 3px;
 }
-   .button:hover,
-   .button:focus,
-   .button:active{
-       background-color: #663d15;
+   .button:hover{
+    background-color: #e74246;
+   }
+   .button:focus{
+     background-color: #d7373b;
+     border-top: 2px solid #c13135;
+
    }
 .main-navigation ul{
     font-size: 16px;
@@ -71,4 +78,32 @@ a{
 }
 .shopping-cart a:focus{
     color: #bcbcbc;
+}
+.services h3{
+    text-transform: uppercase;
+}
+.services-list{
+    list-style: none;
+}
+.about-us ul{
+    list-style: none;
+}
+.about-us-heading{
+    font-family: "robotomedium";
+    font-size: 45px;
+    line-height: 45px;
+}
+.advantages-heading{
+    text-transform: uppercase;
+}
+.advantages-list p{
+    font-family: "robotomedium";
+    font-size: 45px;
+    color:#000000;
+}
+.advantages-small{
+    text-transform: none;
+}
+.portfolio ul{
+    list-style:none;
 }
