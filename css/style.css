@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'robotobold';
-    src: url('robotobold.woff2') format('woff2'),
-         url('robotobold.woff') format('woff');
+    src: url('../font/robotobold.woff2') format('woff2'),
+         url('../font/robotobold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -41,6 +41,8 @@ a{
     text-decoration: none;
 }
 .button{
+    font-family: 'robotomedium';
+    line-height: 18px;
     text-transform: uppercase;
     vertical-align: middle;
     color: #ffffff;
@@ -51,6 +53,7 @@ a{
     background-color: #e74246;
    }
    .button:focus{
+     color: #df6063;
      background-color: #d7373b;
      border-top: 2px solid #c13135;
 
@@ -85,6 +88,28 @@ a{
 .services-list{
     list-style: none;
 }
+.button-app{
+    background-color: #00ca74;
+}
+.button-app:hover{
+    background-color: #00bc6c;
+}
+.button-app:focus{
+    color: #36bc83;
+    background-color: #00aa62;
+    border-top: 2px solid #0c9e60;
+}
+.button-presentation{
+    background-color: #efc84a;
+}
+.button-presentation:hover{
+    background-color: #eab534;
+}
+.button-presentation:focus{
+    color: #ebba51;
+    background-color: #eab534;
+    border-top: 2px solid #ce961f;
+}
 .about-us ul{
     list-style: none;
 }
@@ -97,13 +122,29 @@ a{
     text-transform: uppercase;
 }
 .advantages-list p{
-    font-family: "robotomedium";
+    font-family: 'robotobold';
     font-size: 45px;
     color:#000000;
 }
 .advantages-small{
+    color: #283136;
+    font-family: 'roboto';
     text-transform: none;
 }
 .portfolio ul{
     list-style:none;
+}
+.map h2{
+    font-family: "robotobold";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.footer-social ul{
+    list-style: none;
+}
+.footer-heading b{
+    color: #000000;
+    font-family: 'robotobold';
+    font-size: 36px;
+    line-height: 36px;
 }
