@@ -57,6 +57,7 @@ a{
     line-height: 18px;
     text-transform: uppercase;
     vertical-align: middle;
+    text-align: center;
     color: #ffffff;
     background-color: #fb565a;
     border-radius: 3px;
@@ -67,14 +68,16 @@ a{
    .button:focus{
      color: #df6063;
      background-color: #d7373b;
-     border-top: 2px solid #c13135;
-
    }
 
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+.main-header {
+    background-color: #eeeeee;
 }
 
 .main-navigation {
@@ -128,6 +131,16 @@ a{
     padding-top: 85px;
 }
 
+.shopping-cart a{
+    color: #283136;
+}
+.shopping-cart a:hover{
+    color: #f87c7f;
+}
+.shopping-cart a:focus{
+    color: #bcbcbc;
+}
+
 .slider {
     position: relative;
     background-color: #eeeeee;
@@ -141,6 +154,7 @@ a{
 
 .slider-item {
     display: none;
+    padding: 78px 0 80px 0;
     
 }
 
@@ -163,20 +177,81 @@ a{
     margin-bottom: 38px;
 }
 
-/* .slider-button {
+.slider-item:nth-child(1) {
+    background-image: url("../img/slide1.png");
+    background-repeat: no-repeat;
+    background-position: 93% 18px;
+}
+
+.slider-item:nth-child(2) {
+    background-image: url("../img/slide2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+    background-image: url("../img/slide3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
+}
+
+.slider-button {
     display: block;
     width: 240px;
-} */
+    background-color: #fb565a;
+    padding: 13px 0;
+}
 
-.shopping-cart a{
-    color: #283136;
+.slider-control {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+    width: 160px;
+    height: 18px;
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
 }
-.shopping-cart a:hover{
-    color: #f87c7f;
+
+.slider-control i {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.shopping-cart a:focus{
-    color: #bcbcbc;
+
+.slider-control i::after {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 50%;
 }
+
+.slider-control .active::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+    background-color: inherit;
+    border-radius: 50%;
+    border: 2px solid #c1c1c1;
+
+
+}
+
 .services h3{
     text-transform: uppercase;
 }
