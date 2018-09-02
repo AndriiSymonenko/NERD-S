@@ -51,7 +51,7 @@ input [type="radio"].visually-hidden {
 a{
     text-decoration: none;
 }
-.button{
+.button {
     font-family: 'robotomedium';
     font-size: 16px;
     line-height: 18px;
@@ -458,17 +458,33 @@ a{
     font-family: 'roboto';
     text-transform: none;
 }
-/* .portfolio {
-    
-} */
+.portfolio {
+   position: relative;
+   margin-bottom: 130px; 
+}
 .portfolio ul {
     display: flex;
     justify-content: space-between;
     list-style:none;
 }
 
-.map {
+.portfolio::after {
+    content: "";
+    position: absolute;
+    bottom:-50px;
+    width: 1200px;
+    height: 2px;
+    background-color: #eeeeee;
+}
+
+.map{
     background-image: url("../img/map.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    min-width: 1200px;
+    height: 416px;
+    margin-bottom: 70px;
+ 
 }
 
 .map h2{
@@ -476,12 +492,86 @@ a{
     font-size: 18px;
     text-transform: uppercase;
 }
-.footer-social ul{
-    list-style: none;
+
+.conacts {
+    position: absolute;
+    width: 320px;
+    background-color: #ffffff;
+    left: 17%;
+    top: 10%
 }
+
+.conacts h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 54px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 50px;
+
+}
+
+.conacts p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    font-weight: 200;
+}
+
+.button-contact {
+    display: block;
+    width: 220px;
+    margin-left: 50px;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-social ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-right: 130px;
+    margin-bottom: 70px;
+}
+
+
+
+.social-button a {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 14px;
+    background-color: #e1e1e1;
+
+}
+
+.social-button a :last-child {
+    margin-left: 0;
+}
+
 .footer-heading b{
     color: #000000;
     font-family: 'robotobold';
     font-size: 36px;
     line-height: 36px;
 }
+
