@@ -93,10 +93,15 @@ a{
 .main-logo {
     width: 300px;
     padding-top: 50px;
-    
 }
 
+.main-logo:hover {
+    opacity: 0.8;
+}
 
+.main-logo:focus {
+    opacity: 0.3;
+}
 .site-navigation {
     width: 670px;
     display: flex;
@@ -126,11 +131,23 @@ a{
 
 .shopping-cart {
     display: flex;
+    position: relative;
     margin-left: auto;
     max-width: 120px;
     padding:0;
     margin: 0;
     padding-top: 85px;
+}
+
+.shopping-cart::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    right: 100px;
+    top: 92px;
+    background-image: url("../img/cart-icon.svg");
+
 }
 
 .shopping-cart a{
@@ -468,6 +485,18 @@ a{
     list-style:none;
 }
 
+.portfolio a {
+    opacity: 0.2;
+}
+
+.portfolio a:hover {
+    opacity: 1;
+}
+
+.portfolio a:focus {
+    opacity: 0.1;
+}
+
 .portfolio::after {
     content: "";
     position: absolute;
@@ -544,9 +573,6 @@ a{
 }
 
 .footer-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 300px;
     margin-right: 130px;
     margin-bottom: 70px;
@@ -554,14 +580,28 @@ a{
 
 
 
-.social-button a {
-    display: inline-block;
+.social-button  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     margin-right: 14px;
     background-color: #e1e1e1;
 
+}
+
+.social-button:hover {
+    background-color: #e74246;
+}
+
+.social-button:focus {
+    background-color: #d7373b;
+}
+
+.social-button:focus path {
+    opacity: 0.4;
 }
 
 .social-button a :last-child {
