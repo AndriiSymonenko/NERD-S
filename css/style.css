@@ -614,4 +614,7 @@ a{
     font-size: 36px;
     line-height: 36px;
 }
-
+/* Catalog style */
+.catalog-columns {
+    display: flex;
+}
