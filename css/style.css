@@ -85,6 +85,7 @@ a{
     display: flex;
     font-size: 16px;
     line-height: 30px;
+    margin-bottom: 50px;
     text-transform: uppercase;
     background-color: #eeeeee;
     
@@ -621,6 +622,7 @@ a{
     text-align: center;
     margin:0;
     padding: 0;
+    padding-bottom: 115px;
 }
 .breadsrumbs-filters {
     display: flex;
@@ -683,12 +685,17 @@ a{
     margin-right: 40px;
 }
 
+.catalog-item:nth-child(even) {
+    margin-right: 0;
+}
+
 .catalog-item img{
     position: relative;
     z-index: 1;
 }
 
 .item-header {
+    display: flex;
     content: "";
     position: absolute;
     top: -40px;
@@ -700,6 +707,54 @@ a{
     z-index: 1;
 }
 
+.item-header span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
 .catalog-item:hover .item-header  {
     opacity: 1;
+}
+
+.hidden-price-card {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    width: 360px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.hidden-price-card p:first-child {
+    text-transform: uppercase;
+    font-weight: 2000;
+    font-size: 18px;
+    padding-top: 35px;
+    margin: 0;
+}
+
+.hidden-price-card p {
+    padding: 0 60px;
+    margin-bottom: 30px;
+}
+
+.hidden-price-button {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #fb565a;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 15px 60px;
+    border-radius: 3px;
+   
+}
+
+.catalog-item:hover .hidden-price-card {
+    display: block;
 }
