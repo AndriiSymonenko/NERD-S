@@ -34,6 +34,17 @@ body{
     color: #283136;
     background-color: #ffffff;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+fieldset {
+    border:  none;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input [type="checkbox"].visually-hidden,
 input [type="radio"].visually-hidden {
@@ -616,6 +627,17 @@ a{
     line-height: 36px;
 }
 /* Catalog style */
+
+.filter {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.filter legend {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .catalog-heading {
     font-size: 55px;
     line-height: 55px;
@@ -671,9 +693,11 @@ a{
 
 .catalog-list {
     display: flex;
+    width: 800px;
     flex-wrap: wrap;
     justify-content: flex-end;
     list-style: none;
+    margin-bottom: 40px;
 }
 
 .catalog-item {
@@ -688,6 +712,15 @@ a{
 .catalog-item:nth-child(even) {
     margin-right: 0;
 }
+
+.catalog-item:nth-child(6) {
+    margin-bottom: 0;
+}
+
+.catalog-item:nth-child(5) {
+    margin-bottom: 0;
+}
+
 
 .catalog-item img{
     position: relative;
@@ -757,4 +790,34 @@ a{
 
 .catalog-item:hover .hidden-price-card {
     display: block;
+}
+
+.paginator-list {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    margin-left: 40px;
+
+}
+
+.paginator-list a {
+    color: #000000;
+    background-color: #eeeeee;
+    padding: 16px 20px;
+    border-radius: 3px;
+}
+
+.paginator-item {
+    margin-right: 10px;
+}
+
+.active a {
+    background-color:transparent;
+    border: 2px solid #eeeeee;
+    padding: 14px 18px;
+}
+
+.paginator-item-button a {
+    padding: 16px 80px;
 }
